@@ -1,11 +1,10 @@
-import * as React from 'react';
+import React from 'react';
 import { Route } from 'react-router';
 import Layout from './components/Layout';
 import Home from './components/Home';
 import Counter from './components/Counter';
 import FetchData from './components/FetchData';
-import UserAPI from './components/UserAPI'
-
+import UserAPI from './components/UserAPI';
 import './custom.css'
 
 //export default () => (
@@ -18,7 +17,7 @@ import './custom.css'
 function App() {
     return 
     (
-        <UserAPI />
+        <UserAPI/>
         );
 }
 export default App;

@@ -23,14 +23,14 @@ function UserAPI() {
     }, []);
     async function Get() {
 
-        const res = await axios.get("https://localhost:7012/api/Employee");
+        const res = await axios.get("https://localhost:44370/api/Employee");
         setEmployees(res.data);
         console.log(res.data);
     }
     async function Post(event: React.MouseEvent<HTMLButtonElement>) {
         event.preventDefault();
         try {
-            await axios.post("https://localhost:7012/api/Employee", {
+            await axios.post("https://localhost:44370/api/Employee", {
                 Id: "",
                 Name: Name,
                 Country: Country,
@@ -59,7 +59,7 @@ function UserAPI() {
         setEmailIdslist(employee.EmailIdsList);
     }
     async function Delete(Id: string) {
-        await axios.delete("https://localhost:7012/api/Employee" + Id);
+        await axios.delete("https://localhost:44370/api/Employee" + Id);
         alert("Employee Data edited Successfully");
         setId("");
         setName("");
@@ -72,7 +72,7 @@ function UserAPI() {
         event.preventDefault();
         try {
 
-            await axios.put("https://localhost:7012/api/Employee",
+            await axios.put("https://localhost:44370/api/Employee",
 
 
                 {
